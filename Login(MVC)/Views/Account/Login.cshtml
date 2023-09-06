@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/_LayoutPage1.cshtml";
+}
+<h1>LOGIN PIM(DEMO)</h1>
+<div class="w3ls-login box box--big">
+    <!-- O formulário começa aqui -->
+    <form action="Verify" method="post">
+        <div class="agile-field-txt">
+            <label><i class="fa fa-user" aria-hidden="true"></i> Usuário/E-mail </label>
+            <input type="text" name="Name" placeholder="Digite seu usuário/e-mail" required="" />
+        </div>
+        <div class="agile-field-txt">
+            <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> Senha </label>
+            <input type="password" name="Password" placeholder="Digite sua senha" required="" id="myInput" />
+            <div class="agile_label">
+                <input id="check3" name="check3" type="checkbox" value="show password" onclick="myFunction()">
+                <label class="check" for="check3">Mostrar senha</label>
+            </div>
+            <div class="agile-right">
+                <a href="#">esqueceu a senha?</a>
+            </div>
+        </div>
+        <!-- Script para mostrar/esconder a senha -->
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myInput");
+                if (x.type === "password") {
+                    x.type = "text";
+                } else {
+                    x.type = "password";
+                }
+            }
+        </script>
+        <!-- Fim do script -->
+        <input type="submit" value="ENTRAR">
+    </form>
+</div>
+<!-- Fim do formulário -->
+<!-- Direitos autorais -->
+<div class="copy-wthree">
+    <p>
+        © 2023 | PIM Recursos Humanos | Todos os direitos reservados
+        
+</div>
+
